@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,6 @@
 }
 
 html {
-  font-size: 62.5%;
   font-family: "Roboto", sans-serif;
 }
 
@@ -74,11 +72,13 @@ a {
 .mySlides {
   display: none;
 }
+
 img {
   vertical-align: middle;
 }
 
 /* Slideshow container */
+
 .slideshow-container {
   max-width: 1200px;
   position: relative;
@@ -86,6 +86,7 @@ img {
 }
 
 /* The dots/bullets/indicators */
+
 .dot {
   height: 15px;
   width: 15px;
@@ -102,11 +103,43 @@ img {
 }
 
 /* Fading animation */
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+.columns {
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 0;
+}
+
+.left-div {
+  display: inline-block;
+  max-width: 40%;
+  text-align: left;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 5px;
+  vertical-align: top;
+}
+
+.right-div {
+  display: inline-block;
+  max-width: 40%;
+  text-align: left;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+.left-text,
+.right-text {
+  text-align: justify;
 }
 
 @-webkit-keyframes fade {
@@ -140,31 +173,29 @@ img {
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
-
   .nav-menu.active {
     left: 0;
   }
-
   .nav-item {
     margin: 2.5rem 0;
   }
-
   .hamburger {
     display: block;
     cursor: pointer;
   }
-
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-
   .hamburger.active .bar:nth-child(1) {
     -webkit-transform: translateY(8px) rotate(45deg);
     transform: translateY(8px) rotate(45deg);
   }
-
   .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
+  }
+  .left-div,
+  .right-div {
+    max-width: 100%;
   }
 }
