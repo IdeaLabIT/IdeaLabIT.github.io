@@ -183,6 +183,23 @@ img {
   align-content: center;
 }
 
+.contact-div {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2% 10% 2% 10%;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100vh;
+  min-height: 50vh;
+  background-color: cadetblue;
+}
+
+.contact-td-style {
+  padding: 10px;
+}
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
