@@ -156,11 +156,14 @@ hr {
 }
 
 .container img {
-  height: 40%;
-  width:40%;
-  padding-right: 3%;
-  padding-left:3% ;
-  border-radius: 12%;
+  height: 35%;
+  width:35%;
+  margin-right: 5%;
+  margin-left:5%;
+  margin-top: -1%;
+  margin-bottom: 2%;
+  border-radius: 3%;
+  border:white solid 2px;
 
 }
 
@@ -260,6 +263,7 @@ footer {
   width: 100vw;
   z-index: -1;
 }
+
 /* End */
 
 @media only screen and (max-width: 768px) {
@@ -318,8 +322,8 @@ footer {
     color: black;
   }
   .event_description {
-    padding-left:5%;
     margin-top: 4%;
+    font-size: 20px;
   }
   .button_div {
     margin-top: 10%;
@@ -327,11 +331,13 @@ footer {
   .button {
     animation: glowing 1200ms infinite;
   }
-  .box {
+  .box,
+  .container {
     display: grid;
   }
 
-  .box img {
+  .box img,
+  .container img {
     height:90%;
     width:90%;
     margin-right: 5%;

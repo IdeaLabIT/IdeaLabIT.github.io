@@ -73,5 +73,8 @@ function showSlides() {
   setTimeout(showSlides, 3000); // Change image every x seconds
 }
 
+setTimeout(function(){
+  $('.loader_bg').fadeToggle();
+}, 1500);
 
 //  showSlidesCurrent(slideIndexCurrent);
