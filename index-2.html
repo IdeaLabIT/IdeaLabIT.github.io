@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet/less" type="text/css" href="styles.html" />
+    <script src="less.html" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/background.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/events.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/aboutUs.css" />
+    <link rel="stylesheet" href="css/videos.css" />
+    <link rel="stylesheet" href="css/speakers.css" />
+    <link rel="stylesheet" href="css/allevents.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/icons/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/flickity.css" />
+    <script src="js/flickity.js"></script>
+    <title>IDEA LAB | GCET</title>
+  </head>
+
+  <body>
+    <div id="pagination">
+      <div class="line"></div>
+      <div
+        class="individual opacity1Class"
+        onclick="navigateTo('home')"
+        id="homePagination"
+      >
+        <div class="rectangle">
+          <div class="dot"></div>
+        </div>
+        <div class="name">Home</div>
+      </div>
+      <div
+        class="individual"
+        onclick="navigateTo('aboutUs')"
+        id="aboutUsPagination"
+      >
+        <div class="rectangle">
+          <div class="dot"></div>
+        </div>
+        <div class="name">About Us</div>
+      </div>
+      <div
+        class="individual"
+        onclick="navigateTo('speakers')"
+        id="speakersPagination"
+      >
+        <div class="rectangle">
+          <div class="dot"></div>
+        </div>
+        <div class="name">Speaker</div>
+      </div>
+      <div
+        class="individual"
+        onclick="navigateTo('events')"
+        id="eventsPagination"
+      >
+        <div class="rectangle">
+          <div class="dot"></div>
+        </div>
+        <div class="name">Events</div>
+      </div>
+      <div
+        class="individual"
+        onclick="navigateTo('workshops')"
+        id="workshopsPagination"
+      >
+        <div class="rectangle">
+          <div class="dot"></div>
+        </div>
+        <div class="name">Workshops</div>
+      </div>
+      <div
+        class="individual"
+        onclick="navigateTo('contact')"
+        id="contactPagination"
+      >
+        <div class="rectangle">
+          <div class="dot"></div>
+        </div>
+        <div class="name">Contact Us</div>
+      </div>
+    </div>
+
+    <div class="events-dialogue-container">
+      <div class="events-dialogue-box">
+        <div class="close_button_container">
+          <img
+            src="assets/icons/close.svg"
+            class="close_svg"
+            style="cursor: pointer"
+            onclick="close_events()"
+          />
+        </div>
+        <div class="events-dialogue-text"></div>
+      </div>
+    </div>
+
+    <section class="backgrounds">
+      <div class="landing-background">
+        <video autoplay muted loop>
+          <source src="assets/backgrounds/video.mp4" class="background-ele" />
+        </video>
+
+        <div class="background-ele4">
+          <div
+            class="theme-text"
+            id="theme-text-landing"
+            style="letter-spacing: 0"
+          >
+            <span class="loading-text-words">G</span>
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">Z</span>
+            <span class="loading-text-words">E</span>
+            <span class="loading-text-words" style="opacity: 0"> A</span>
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">H</span>
+            <span class="loading-text-words">E</span>
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">D</span>
+            <span class="loading-text-words" style="opacity: 0"> A </span>
+            <span class="loading-text-words">T</span>
+            <span class="loading-text-words">E</span>
+            <span class="loading-text-words">C</span>
+            <span class="loading-text-words">H</span>
+            <span class="loading-text-words">-</span>
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">-</span>
+            <span class="loading-text-words">R</span>
+            <span class="loading-text-words">E</span>
+            <span class="loading-text-words">S</span>
+            <span class="loading-text-words">E</span>
+            <span class="loading-text-words">T</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="stack" style="--stacks: 3">
+      <span style="--index: 0">COMING SOON</span>
+      <span style="--index: 1">COMING SOON</span>
+      <span style="--index: 2">COMING SOON</span>
+    </div>
+
+    <div class="grid-background"></div>
+    <div class="star-container1">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div>
+
+    <div class="hamburger-icon">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="hamburger-menu">
+      <div class="ham-item" onclick="navigateTo('home')">Home</div>
+      <div class="ham-item" onclick="navigateTo('aboutUs')">About Us</div>
+      <div class="ham-item" onclick="navigateTo('speakers')">Expert Talk</div>
+      <div class="ham-item" onclick="navigateTo('events')">Events</div>
+      <div class="ham-item" onclick="navigateTo('workshops')">Workshops</div>
+      <div class="ham-item" onclick="navigateTo('contact')">Contact Us</div>
+      <div
+        class="ham-item"
+        onclick="navigateTo('https://forms.gle/oteX1AmDnEufUqx19')"
+      >
+        Register
+      </div>
+    </div>
+
+    <div class="wrapper" id="main">
+      <section class="home" id="home">
+        <div class="navbar">
+          <img src="assets/backgrounds/Apogee%402x.png" class="nav-logo" />
+          <div class="nav-link-container">
+            <div class="nav-links">
+              <span><a onclick="navigateTo('home')">Home</a></span>
+            </div>
+            <div class="nav-links">
+              <span><a onclick="navigateTo('aboutUs')">About Us</a></span>
+            </div>
+            <div class="nav-links">
+              <span><a onclick="navigateTo('speakers')">Expert Talk</a></span>
+            </div>
+            <div class="nav-links">
+              <span><a onclick="navigateTo('events')">Events</a></span>
+            </div>
+            <div class="nav-links">
+              <span><a onclick="navigateTo('workshops')">Workshop</a></span>
+            </div>
+            <div class="nav-links">
+              <span><a onclick="navigateTo('contact')">Contact Us</a></span>
+            </div>
+            <div class="nav-links register-button">
+              <a href="https://forms.gle/oteX1AmDnEufUqx19" target="_blank"
+                >REGISTER</a
+              >
+            </div>
+            <div class="hamburger"></div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="social-icons">
+            <a href="#" target="_blank">
+              <span class="facebook icon"></span>
+            </a>
+            <a href="#" target="_blank">
+              <span class="instagram icon"></span>
+            </a>
+            <a href="#" target="_blank">
+              <span class="github icon"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="aboutUs" id="aboutUs">
+        <div class="heading">
+          <span>About Us</span>
+        </div>
+        <div class="body">
+          <div class="ele-1"></div>
+          GCET provides many clubs and labs from which students can get
+          opportunities to develop their personal and professional skills. Idea
+          lab is one such lab that provides ample of opportunities to students
+          of all branches. Idea lab’s vision is to provide innovation and
+          start-ups which will drive sustainable technical and economic growth
+          and create large scale employment opportunities across the country. It
+          is to set up the bundle of creative ideas of students and to test
+          their feasibility with various desires, tools and consumables that are
+          available under one roof for the implementation of an idea in a
+          prototype. In addition, Idea lab would extend beyond the academic
+          campus or a nearby region and it could collectively be the Idea lab of
+          nation.
+          <br /><br />
+          Objectives:<br />
+          1. Providing all equipment’s to transform an idea into a prototype
+          under one roof.<br /><br />
+          2. Critical thinking, problem solving, collaboration and other 21st
+          century skill training.<br /><br />
+          3. Engineering students becoming more inquisitive, imaginative and
+          creative. Engineering students become more engaging.<br /><br />
+          4. The activities and events planned for the Idea lab will provide
+          multidisciplinary education and research.
+
+          <div class="ele-2"></div>
+          <div class="ele-3"></div>
+        </div>
+      </section>
+
+      <section class="events" id="speakers">
+        <div class="heading">
+          <span>Expert Talk</span>
+        </div>
+        <div class="body">
+          <div class="card">
+            <div class="events-name">SLATE AND CRYSTAL</div>
+            <div class="events-content">
+              <img src="assets/speakers/speaker.jpeg" alt="IoT" />
+              <span>
+                <div class="events-details">
+                  What is the point of doing anything if one cannot explore
+                  through it all? As we all know that how the Corporate World...
+                </div>
+                <div class="events-details-button-container">
+                  <div
+                    class="events-details-button"
+                    onclick="events_dialog({
+                    name: 'INNOVISION',
+                    desc: `What is the point of doing anything if one cannot explore through it all? As we all know that how the Corporate World Technologies differ from which we study in the college. It is like the two shores of a river. So to bridge this gap we have come up with an exciting event called Slate & Crystal. This maiden event calls up the students to tread on the path of ‘Corporate Technologies.’<br />`+
+                    `<br />Experts will use Slate & Crystal method to spread awareness among students about the various technologies evolving, clear some basic fundamentals and theories & to make that theories Crystal clear experts will perform the hands-on live session and will provide with live real-time examples.<br />` +
+                    `<br/><strong>Date:</strong> 7th December 2021` +
+                    `<br/><strong>Time:</strong> 9:30 AM onwards` +
+                    `<br/><strong>Vanue:</strong> Auditorium` + 
+                    `<br /><a href='https://forms.gle/oteX1AmDnEufUqx19' style='text-decoration: none'><div class='register-modal'>Register</div></a>`
+                  })"
+                  >
+                    Details
+                  </div>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="events" id="events">
+        <div class="heading">
+          <span>Events</span>
+        </div>
+        <div class="body">
+          <div class="card">
+            <div class="events-name">QUIMIKONZ</div>
+            <div class="events-content">
+              <img src="assets/kernel-events/event1.jpeg" alt="event1" />
+
+              <span>
+                <div class="events-details">
+                  With technology growing at such an alarming rate, facts and
+                  figures just keep adding up...
+                </div>
+                <div class="events-details-button-container">
+                  <div
+                    class="events-details-button"
+                    onclick="events_dialog({
+                    name: 'QUIMIKONZ',
+                    desc: `With technology growing at such an alarming rate, facts and figures just keep adding up. To match the influx of this humongous amount of data we need a brain that’s sharp as a razor and pliable as a rubber band. Is inquisitiveness your caliber? Time to acknowledge it as here is a chance for you to showcase your prudence of general knowledge and technology. 
+Participate to witness the wonderful event. Identify the logos, spin the wheel of fortune, solve a puzzle and win the event.
+<br/>`+
+                    `<br/><strong>Date:</strong> 7th December 2021` +
+                    `<br/><strong>Time:</strong> 1:30 PM onwards` +
+                    `<br/><strong>Vanue:</strong> Seminar Hall` + 
+                    `<br /><a href='https://forms.gle/oteX1AmDnEufUqx19' style='text-decoration: none'><div class='register-modal'>Register</div></a>`
+                  })"
+                  >
+                    Details
+                  </div>
+                </div>
+              </span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="events-name">TECHNOFRENZY</div>
+            <div class="events-content">
+              <img src="assets/kernel-events/event2.jpeg" alt="event2" />
+
+              <span>
+                <div class="events-details">
+                  The world around us has changed in so many ways due to the
+                  pandemic and the restrictions followed...
+                </div>
+
+                <div class="events-details-button-container">
+                  <div
+                    class="events-details-button"
+                    onclick="events_dialog({
+                    name: 'TECHNOFRENZY',
+                    desc: `The world around us has changed in so many ways due to the pandemic and the restrictions followed. Treasure hunts are a great way to cheer up once again, but have you ever heard of treasure hunt with a twist of technology? Technofrenzy is a kind of an event where you will enjoy the craziness of seeking fun as well as gain knowledge that would amuse human brain.
+So, boost up your valiant spirit and bind your courage to gain a bunch of knowledge with fun set out to unravel riddles. Track down the clues to reach your destination by carrying out the task. Cleave the puzzles, track the path, scan the evidence in order to unravel the tech mystery.<br/>`+`Let’s dive into an amazing venture to solve the quest.<br/>`+`The mystery doesn’t end here. Calling out for the detectives’ help!
+<br/>`+
+                    `<br/><strong>Date:</strong> 8th December 2021` +
+                    `<br/><strong>Time:</strong> 9:30 AM onwards` +
+                    `<br/><strong>Vanue:</strong> Seminar Hall` + 
+                    `<br /><a href='https://forms.gle/oteX1AmDnEufUqx19' style='text-decoration: none'><div class='register-modal'>Register</div></a>`
+                  })"
+                  >
+                    Details
+                  </div>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="events" id="workshops">
+        <div class="heading">
+          <span>Workshops</span>
+        </div>
+        <div class="body">
+          <div class="card">
+            <div class="events-name">INNOVISION</div>
+            <div class="events-content">
+              <img src="assets/workshops/workshop1.jpeg" alt="IoT" />
+              <span>
+                <div class="events-details">
+                  What’s a budding engineer who doesn’t apply what he/she
+                  learns? “Innovision” gives...
+                </div>
+                <div class="events-details-button-container">
+                  <div
+                    class="events-details-button"
+                    onclick="events_dialog({
+                    name: 'INNOVISION',
+                    desc: `What’s a budding engineer who doesn’t apply what he/she learns? “Innovision” gives the students an opportunity to learn IoT like an expert. INFOTSAV makes this possible by organizing hands-on-workshop that will let you experience more about IoT. Many students want to start experimenting with IoT kits and sensors. They need to satisfy their inquisitiveness through some hand-holding in the beginning, and that is exactly what this workshop aims to fulfil. This event focuses on preparing students to face the automation world and let them enjoy the real time IoT use for creating and innovating the society. Come join us if you are an IoT enthusiast as well!<br/>`+
+                    `<br/><strong>Date:</strong> 8th December 2021` +
+                    `<br/><strong>Time:</strong> 1:30 PM onwards` +
+                    `<br/><strong>Vanue:</strong> F101 Mechatronics Building` + 
+                    `<br /><a href='https://forms.gle/oteX1AmDnEufUqx19' style='text-decoration: none'><div class='register-modal'>Register</div></a>`
+                  })"
+                  >
+                    Details
+                  </div>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="heading">
+          <span>Contact Us</span>
+        </div>
+        <div class="contact-body"></div>
+      </section>
+
+      <footer>
+        <span>
+          <span id="follow-us-sapn">Follow us on</span>
+          <a href="#" target="_blank">
+            <span class="facebook icon"></span>
+          </a>
+          <a href="#" target="_blank">
+            <span class="instagram icon"></span>
+          </a>
+          <a href="#" target="_blank">
+            <span class="github icon"></span>
+          </a>
+        </span>
+        <span>IDEA LAB | GCET</span>
+      </footer>
+    </div>
+
+    <section class="allEvents" id="allEvents">
+      <div class="header">
+        <span class="heading">Events</span>
+      </div>
+      <div class="body" id="allEventsBody"></div>
+    </section>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/speakers.js"></script>
+    <script src="js/scramble_text.html"></script>
+    <script src="js/allevents.js"></script>
+    <script src="js/events.js"></script>
+  </body>
+</html>
