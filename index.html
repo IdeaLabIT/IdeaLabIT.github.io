@@ -193,13 +193,18 @@
           document.getElementById("mins").innerHTML = minutes + "m ";
           document.getElementById("secs").innerHTML = seconds + "s ";
 
+          document.getElementById("days").style.fontSize = "40px";
+          document.getElementById("hours").style.fontSize = "40px";
+          document.getElementById("mins").style.fontSize = "40px";
+          document.getElementById("secs").style.fontSize = "40px";
+
           if (timeleft < 0) {
             clearInterval(myfunc);
             document.getElementById("days").innerHTML = "";
             document.getElementById("hours").innerHTML = "";
             document.getElementById("mins").innerHTML = "";
             document.getElementById("secs").innerHTML = "";
-            document.getElementById("end").innerHTML = "TIME UP!!";
+            document.getElementById("end").innerHTML = "EVENT IS LIVE!!";
           }
         }, 1000);
       </script>
