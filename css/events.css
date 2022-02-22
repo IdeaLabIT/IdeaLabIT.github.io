@@ -64,7 +64,7 @@
 
 .events .body {
   width: 100%;
-  padding-top: 128px;
+  padding-top: 64px;
   /* padding: 1280px 0 0 0; */
   box-sizing: border-box;
   display: flex;
@@ -83,7 +83,7 @@
   height: 25vh;
 }
 
-.events .body .card>* {
+.events .body .card > * {
   width: 100%;
 }
 
@@ -219,13 +219,14 @@
   animation: glitch-anim-1-horizontal var(--time-anim) infinite linear alternate;
 }
 
-.glitchy_image_cont:hover>.glitchy_image:nth-child(3) {
+.glitchy_image_cont:hover > .glitchy_image:nth-child(3) {
   transform: translate3d(calc(-1 * var(--gap-horizontal)), 0, 0);
   animation: glitch-anim-2-horizontal var(--time-anim) infinite linear alternate;
 }
 
-.glitchy_image_cont:hover>.glitchy_image:nth-child(4) {
-  transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0) scale3d(-1, -1, 1);
+.glitchy_image_cont:hover > .glitchy_image:nth-child(4) {
+  transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0)
+    scale3d(-1, -1, 1);
   animation: glitch-anim-3-horizontal var(--time-anim) infinite linear alternate;
 }
 
@@ -236,19 +237,20 @@
   animation: glitch-anim-1-vertical var(--time-anim) infinite linear alternate;
 }
 
-.glitch--vertical:hover>.glitchy_image:nth-child(3) {
+.glitch--vertical:hover > .glitchy_image:nth-child(3) {
   transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0);
   animation: glitch-anim-2-vertical var(--time-anim) infinite linear alternate;
 }
 
-.glitch--vertical:hover>.glitchy_image:nth-child(4) {
-  transform: translate3d(calc(-1 * var(--gap-horizontal)), 0, 0) scale3d(-1, -1, 1);
+.glitch--vertical:hover > .glitchy_image:nth-child(4) {
+  transform: translate3d(calc(-1 * var(--gap-horizontal)), 0, 0)
+    scale3d(-1, -1, 1);
   animation: glitch-anim-3-vertical var(--time-anim) infinite linear alternate;
 }
 
 /* Hover flash animation on last image */
 
-.glitchy_image_cont:hover>.glitchy_image:nth-child(5) {
+.glitchy_image_cont:hover > .glitchy_image:nth-child(5) {
   animation: glitch-anim-flash 0.5s steps(1, end) infinite;
 }
 
@@ -796,7 +798,8 @@
     opacity: 0.2;
     transform: translate3d(var(--gap-horizontal), var(--gap-vertical), 0);
   }
-  33%, 100% {
+  33%,
+  100% {
     opacity: 0;
     transform: translate3d(0, 0, 0);
   }

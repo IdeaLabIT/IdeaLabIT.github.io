@@ -134,7 +134,6 @@ const isInViewport = function (elem) {
 };
 
 const setActivePage = (idAsString) => {
-  console.log(activePage);
   activePage = idAsString;
   str = activePage + "Pagination";
   document.querySelectorAll(".individual").forEach((ele) => {
