@@ -26,12 +26,14 @@ const toggleHamMenu = () => {
         hamItem[i].style.animation =
           "slideIn 0.25s linear " + (0.4 + 0.1 * i) + "s forwards";
       }
+      document.body.setAttribute("style", "overflow:hidden;");
     }, 50);
   } else {
     hamButton.classList.remove("close");
     menu.style.opacity = 0;
     setTimeout(() => {
       menu.style.display = "none";
+      document.body.setAttribute("style", "overflow:visible;");
     }, 500);
   }
 };
