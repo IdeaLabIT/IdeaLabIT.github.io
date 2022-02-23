@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet/less" type="text/css" href="styles.html" />
+    <script src="less.html" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/background.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/events.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/aboutUs.css" />
+    <link rel="stylesheet" href="css/videos.css" />
+    <link rel="stylesheet" href="css/speakers.css" />
+    <link rel="stylesheet" href="css/allevents.css" />
+    <link rel="stylesheet" href="css/developers.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/Idea.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/flickity.css" />
+    <script src="js/flickity.js"></script>
+    <title>IDEA LAB | GCET</title>
+  </head>
+
+  <body>
+    <div class="wrapper" id="main">
+      <section>
+        <div class="navbar">
+          <a href="/">
+            <img src="assets/backgrounds/Apogee%402x.png" class="nav-logo" />
+          </a>
+          <div class="nav-link-container">
+            <div class="nav-links">
+              <span><a onclick="navigateTo('home')">Home</a></span>
+            </div>
+            <div class="nav-links">
+              <span><a onclick="navigateTo('aboutUs')">About Us</a></span>
+            </div>
+            <div class="nav-links">
+              <span><a onclick="navigateTo('speakers')">Expert Talk</a></span>
+            </div>
+            <div class="nav-links">
+              <span><a onclick="navigateTo('events')">Events</a></span>
+            </div>
+            <div class="nav-links">
+              <span><a onclick="navigateTo('workshops')">Workshop</a></span>
+            </div>
+            <div class="hamburger"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="iframe">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdaR-y3Ftrz_4YbCi5L5ggndo9E0MOVc5g_dp8RRmM6b_nxnw/viewform?embedded=true"
+          width="700"
+          height="1600"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
+      </div>
+
+      <footer>
+        <span>
+          <span id="follow-us-sapn">Follow us on</span>
+          <a href="https://instagram.com/idealab_gcet" target="_blank">
+            <span class="instagram icon"></span>
+          </a>
+          <a
+            href="https://youtube.com/channel/UCd9YC21Bw2W4MhOiJS9zR3g"
+            target="_blank"
+          >
+            <span class="youtube icon"></span>
+          </a>
+        </span>
+        <span>IDEA LAB | GCET</span>
+      </footer>
+    </div>
+
+    <section class="allEvents" id="allEvents">
+      <div class="header">
+        <span class="heading">Events</span>
+      </div>
+      <div class="body" id="allEventsBody"></div>
+    </section>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/speakers.js"></script>
+    <script src="js/scramble_text.html"></script>
+    <script src="js/allevents.js"></script>
+    <script src="js/events.js"></script>
+  </body>
+</html>
