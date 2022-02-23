@@ -109,7 +109,7 @@
   /* display: flex; */
   margin-left: 10%;
   margin-right: auto;
-  height: 73%;
+  /* height: 73%; */
   box-sizing: border-box;
 }
 
@@ -273,6 +273,7 @@
   justify-content: center;
   align-items: stretch;
   font-size: 0.8rem;
+  text-align: justify;
 }
 
 .events-details-button-container {
@@ -392,7 +393,7 @@
   }
   .events .body .card .events-content img {
     width: 50%;
-    height: 80%;
+    height: 86%;
     margin-left: -0.5%;
   }
 }

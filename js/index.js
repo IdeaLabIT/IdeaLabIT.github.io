@@ -162,7 +162,7 @@ window.addEventListener(
     if (isInViewport(aboutUs)) {
       setActivePage("aboutUs");
       if (!isAboutUsAnimated) {
-        phrases = ["IdeaLab"];
+        phrases = ["About Us"];
         el = aboutUs;
         fx = new TextScramble(el);
         isAboutUsAnimated = true;
@@ -235,7 +235,7 @@ window.addEventListener(
     if (isInViewport(aboutUs)) {
       setActivePage("aboutUs");
       if (!isAboutUsAnimated) {
-        phrases = ["IdeaLab"];
+        phrases = ["About Us"];
         el = aboutUs;
         fx = new TextScramble(el);
         isAboutUsAnimated = true;
@@ -324,7 +324,7 @@ const navigateTo = (id) => {
   if (id == "aboutUs") {
     setActivePage("aboutUs");
     if (!isAboutUsAnimated) {
-      phrases = ["IdeaLab"];
+      phrases = ["About Us"];
       el = aboutUs;
       fx = new TextScramble(el);
       isAboutUsAnimated = true;

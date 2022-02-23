@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/developers.css" />
     <link
       rel="shortcut icon"
-      href="assets/icons/favicon.png"
+      href="./assets/icons/Idea.png"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/flickity.css" />
@@ -40,16 +40,6 @@
           <div class="dot"></div>
         </div>
         <div class="name">Home</div>
-      </div>
-      <div
-        class="individual"
-        onclick="navigateTo('aboutUs')"
-        id="aboutUsPagination"
-      >
-        <div class="rectangle">
-          <div class="dot"></div>
-        </div>
-        <div class="name">About Us</div>
       </div>
       <div
         class="individual"
@@ -80,6 +70,16 @@
           <div class="dot"></div>
         </div>
         <div class="name">Workshops</div>
+      </div>
+      <div
+        class="individual"
+        onclick="navigateTo('aboutUs')"
+        id="aboutUsPagination"
+      >
+        <div class="rectangle">
+          <div class="dot"></div>
+        </div>
+        <div class="name">About Us</div>
       </div>
     </div>
 
@@ -223,11 +223,8 @@
       <div class="ham-item" onclick="navigateTo('speakers')">Expert Talk</div>
       <div class="ham-item" onclick="navigateTo('events')">Events</div>
       <div class="ham-item" onclick="navigateTo('workshops')">Workshops</div>
-      <div
-        class="ham-item"
-        onclick="navigateTo('https://forms.gle/oteX1AmDnEufUqx19')"
-      >
-        Register
+      <div class="ham-item">
+      <a class="hamSub" href="https://forms.gle/oteX1AmDnEufUqx19" target="_blank">Register</a>
       </div>
     </div>
 
@@ -252,7 +249,7 @@
               <span><a onclick="navigateTo('workshops')">Workshop</a></span>
             </div>
             <div class="nav-links register-button">
-              <a href="https://forms.gle/oteX1AmDnEufUqx19" target="_blank"
+              <a href='https://forms.gle/oteX1AmDnEufUqx19' target="_blank"
                 >REGISTER</a
               >
             </div>
@@ -274,7 +271,7 @@
         </div>
       </section>
 
-      <section class="aboutUs" id="aboutUs">
+      <section class="aboutUs" id="ideaLab">
         <div class="heading">
           <span>IDEA</span>
         </div>
@@ -293,7 +290,7 @@
           campus or a nearby region and it could collectively be the Idea lab of
           nation.
           <br /><br />
-          Objectives:<br />
+          <span style="font-weight: bold; font-size: large; text-decoration: underline;">Objectives</span>:<br /><br/>
           1. Providing all equipment’s to transform an idea into a prototype
           under one roof.<br /><br />
           2. Critical thinking, problem solving, collaboration and other 21st
@@ -316,7 +313,7 @@
           <div class="card">
             <div class="events-name">SLATE AND CRYSTAL</div>
             <div class="events-content">
-              <img src="assets/speakers/speaker.jpeg" alt="IoT" />
+              <img src="./assets/about/Recent Photo.jpg" alt="IoT" />
               <span>
                 <div class="events-details">
                   What is the point of doing anything if one cannot explore
@@ -449,7 +446,7 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
         </div>
       </section>
 
-      <section class="aboutUs" id="developers">
+      <section class="aboutUs" id="aboutUs">
         <div class="heading">
           <span>About Us</span>
         </div>
@@ -464,7 +461,7 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
                 height="100px"
               />
               <p>Smit Makhecha</p>
-              <p id="role">POC (Point of Contact)</p>
+              <p id="role">Co-ordinator</p>
             </div>
             <div class="m1">
               <img
@@ -474,7 +471,7 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
                 height="100px"
               />
               <p>Krishnan Navdia</p>
-              <p id="role">POC (Point of Contact)</p>
+              <p id="role">Co-cordinator</p>
             </div>
             <div class="m1">
               <img
@@ -484,7 +481,7 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
                 height="100px"
               />
               <p>Yatri Shah</p>
-              <p id="role">Graphic Designer</p>
+              <p id="role">Team Member</p>
             </div>
             <div class="m1">
               <img
@@ -494,7 +491,7 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
                 height="100px"
               />
               <p>Aayushi Gurjar</p>
-              <p id="role">Graphic Designer</p>
+              <p id="role">Team Member</p>
             </div>
             <div class="m1">
               <img
@@ -504,38 +501,9 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
                 height="100px"
               />
               <p>Nainil Oza</p>
-              <p id="role">VFX Editor</p>
+              <p id="role">Team Member</p>
             </div>
-            <div class="m1">
-              <img
-                src="./assets/about/yash.jpeg"
-                class="center"
-                width="100px"
-                height="100px"
-              />
-              <p>Yash Patel</p>
-              <p id="role">Graphic Designer</p>
-            </div>
-            <div class="m1">
-              <img
-                src="./assets/about/ami.jpg"
-                class="center"
-                width="100px"
-                height="100px"
-              />
-              <p>Ami Raj</p>
-              <p id="role">Graphic Designer</p>
-            </div>
-            <div class="m1">
-              <img
-                src="./assets/about/henali.jpg"
-                class="center"
-                width="100px"
-                height="100px"
-              />
-              <p>Henali Shah</p>
-              <p id="role">Graphic Designer</p>
-            </div>
+            
             <div class="m1">
               <img
                 src="./assets/about/sujal.jpg"
@@ -544,7 +512,7 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
                 height="100px"
               />
               <p>Sujal Lakhani</p>
-              <p id="role">App Developer</p>
+              <p id="role">Team Member</p>
             </div>
             <div class="m1">
               <img
@@ -554,18 +522,9 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
                 height="100px"
               />
               <p>Kenil Kalathiya</p>
-              <p id="role">App Developer</p>
+              <p id="role">Team Member</p>
             </div>
-            <div class="m1">
-              <img
-                src="./assets/about/siddharth.jpg"
-                class="center"
-                width="100px"
-                height="100px"
-              />
-              <p>Siddharth Chudasma</p>
-              <p id="role">App Developer</p>
-            </div>
+          
             <div class="m1">
               <img
                 src="./assets/about/jyot.jpg"
@@ -574,7 +533,7 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
                 height="100px"
               />
               <p>Jyot Prajapati</p>
-              <p id="role">App Developer</p>
+              <p id="role">Team Member</p>
             </div>
             <div class="m1">
               <img
@@ -583,8 +542,8 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
                 width="100px"
                 height="100px"
               />
-              <p>Jyot Prajapati</p>
-              <p id="role">Web Developer</p>
+              <p>Adnan Lokhandwala</p>
+              <p id="role">Team Member</p>
             </div>
             <div class="m1">
               <img
@@ -594,7 +553,7 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
                 height="100px"
               />
               <p>Krupang Buddhdev</p>
-              <p id="role">Event Lead</p>
+              <p id="role">Team Member</p>
             </div>
             <div class="m1">
               <img
@@ -604,7 +563,7 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
                 height="100px"
               />
               <p>Priyan Nakrani</p>
-              <p id="role">Documentation</p>
+              <p id="role">Team Member</p>
             </div>
             <div class="m1">
               <img
@@ -614,7 +573,7 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
                 height="100px"
               />
               <p>Henil Patel</p>
-              <p id="role">Documentation</p>
+              <p id="role">Team Member</p>
             </div>
             <div class="m1">
               <img
@@ -624,7 +583,7 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
                 height="100px"
               />
               <p>Jinay Shah</p>
-              <p id="role">Digital Marketing</p>
+              <p id="role">Team Member</p>
             </div>
             <div class="m1">
               <img
@@ -634,7 +593,47 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
                 height="100px"
               />
               <p>Rahi Patel</p>
-              <p id="role">Digital Marketing</p>
+              <p id="role">Team Member</p>
+            </div>
+            <div class="m1">
+              <img
+                src="./assets/about/yash.jpeg"
+                class="center"
+                width="100px"
+                height="100px"
+              />
+              <p>Yash Patel</p>
+              <p id="role">Team Member</p>
+            </div>
+            <div class="m1">
+              <img
+                src="./assets/about/ami.jpg"
+                class="center"
+                width="100px"
+                height="100px"
+              />
+              <p>Ami Raj</p>
+              <p id="role">Team Member</p>
+            </div>
+            <div class="m1">
+              <img
+                src="./assets/about/henali.jpg"
+                class="center"
+                width="100px"
+                height="100px"
+              />
+              <p>Henali Shah</p>
+              <p id="role">Team Member</p>
+            </div>
+            <div class="m1">
+              <img
+                src="./assets/about/siddharth.jpg"
+                class="center"
+                width="100px"
+                height="100px"
+              />
+              <p>Siddharth Chudasma</p>
+              <p id="role">Team Member</p>
             </div>
           </div>
         </div>
@@ -646,10 +645,13 @@ So, boost up your valiant spirit and bind your courage to gain a bunch of knowle
           <a href="#" target="_blank">
             <span class="facebook icon"></span>
           </a>
-          <a href="#" target="_blank">
+          <a href="https://instagram.com/idealab_gcet?utm_medium=copy_link" target="_blank">
             <span class="instagram icon"></span>
           </a>
-          <a href="#" target="_blank">
+          <a href="https://youtube.com/channel/UCd9YC21Bw2W4MhOiJS9zR3g" target="_blank">
+            <span class="youtube icon"></span>
+          </a>
+          <a href="https://github.com/IdeaLabIT" target="_blank">
             <span class="github icon"></span>
           </a>
         </span>

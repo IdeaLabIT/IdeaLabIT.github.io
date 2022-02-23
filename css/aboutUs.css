@@ -32,6 +32,7 @@
   font: 1.25rem 'Space Mono';
   letter-spacing: 0.2rem;
   position: relative;
+  text-align: justify;
 }
 
 .aboutUs .body .ele-1 {
@@ -92,6 +93,7 @@
     padding-bottom: 20px;
     font: 0.9rem 'Space Mono';
     letter-spacing: 0.1rem;
+    text-align: justify;
   }
   
 
