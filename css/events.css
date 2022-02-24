@@ -33,6 +33,7 @@
   justify-content: flex-end;
   margin-bottom: 2vh;
   margin-top: -25px;
+  margin-left: -100px;
 }
 
 .close_svg {
@@ -45,6 +46,8 @@
   background-color: white;
   padding: 50px 50px;
   width: 40vw;
+  height: 90vh;
+  overflow: scroll;
   font-family: "Space Mono", serif;
   z-index: 100;
   transform: translateY(-100vh);
