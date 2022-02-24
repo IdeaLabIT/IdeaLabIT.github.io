@@ -24,6 +24,7 @@
 .events-dialogue-text {
   /* transform: translateY(-100vh); */
   transition: transform 1s ease-out;
+  text-align: justify;
 }
 
 .close_button_container {
@@ -106,7 +107,7 @@
 .events .body .card .events-content img {
   width: 37%;
   /* display: flex; */
-  margin-left: 10%;
+  /* margin-left: 10%; */
   margin-right: auto;
   /* height: 73%; */
   box-sizing: border-box;
@@ -260,7 +261,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  margin-left: 5vw;
+  /* margin-left: 5vw; */
   /* padding-top: 10%; */
 }
 
@@ -356,6 +357,10 @@
   .events .body {
     width: 100%;
     padding: 40px 5%;
+  }
+
+  .events .body2 {
+    margin-bottom: 200px;
   }
   .events-dialogue-box {
     width: 85vw;
