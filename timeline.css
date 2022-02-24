@@ -97,13 +97,13 @@ body {
   max-width: 650px;
   margin: 50px auto;
 }
-
+/* 
 p {
   font-weight: 300;
   line-height: 1.5;
   font-size: 14px;
   opacity: 0.8;
-}
+} */
 
 .timeline {
   position: relative;
@@ -164,6 +164,7 @@ p {
   border-radius: 0 0 0 2px;
 }
 .timeline .timeline-container .timeline-body .timeline-title {
+  margin-top: 20px;
   margin-bottom: 1.4rem;
 }
 .timeline .timeline-container .timeline-body .timeline-title .badge {
@@ -268,9 +269,6 @@ p {
   }
   .desc {
     margin: 50px 25px;
-  }
-  p {
-    font-size: 0.7rem;
   }
 }
 
